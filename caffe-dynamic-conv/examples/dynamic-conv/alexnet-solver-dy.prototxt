@@ -1,0 +1,17 @@
+train_net: "./alexnet-train-dy.prototxt"
+test_net: "./alexnet-test-dy.prototxt"
+test_initialization: false
+test_iter: 1
+test_interval: 5000
+base_lr: 0.01
+#lr_policy: "poly"
+lr_policy: "triangular"
+split_iter: 2000
+power: 1
+max_iter: 20000
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "./snapshot/1/alex-dy"
+solver_mode: GPU
